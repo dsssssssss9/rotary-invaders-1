@@ -10,6 +10,22 @@
  * have asked herr klein if can have user select Pin?
  * 
  * debouncer works fine - just need to only allow 1 shot - extra pushes are buffered
+ 
+ * TO DO
+ *
+ * ----------
+ *
+ * ADD SCORING
+ *
+ * add sound
+ *
+ * enemy movement
+ *
+ * enemy time limit
+ *
+ * bonus ships?
+ *
+ * 2 player / 2 bits?
  */
 function Show_Base () {
     callimatrix.SetMatrixColorbright(0x000000, 0, Pos + 1, cbrightness.hp6)
