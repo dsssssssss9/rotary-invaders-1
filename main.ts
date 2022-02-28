@@ -1,3 +1,16 @@
+/**
+ * using new version of KY-040 extension !!
+ * 
+ * *************************
+ * 
+ * Switch must currently be on p2
+ * 
+ * reconnected callimatrix so that = P0
+ * 
+ * have asked herr klein if can have user select Pin?
+ * 
+ * debouncer works fine - just need to only allow 1 shot - extra pushes are buffered
+ */
 function Show_Base () {
     callimatrix.SetMatrixColorbright(0x000000, 0, Pos + 1, cbrightness.hp6)
     callimatrix.SetMatrixColorbright(0x000000, 0, Pos - 1, cbrightness.hp6)
@@ -74,9 +87,9 @@ function Move_Left () {
 }
 let Enemy = 0
 let Pos = 0
-basic.showIcon(IconNames.Angry)
-KY040.setKY040(DigitalPin.P1, DigitalPin.P15, DigitalPin.P14)
-callimatrix.initNeoMatrix(DigitalPin.P2)
+basic.showIcon(IconNames.Ghost)
+KY040.setKY040(DigitalPin.P1, DigitalPin.P15, DigitalPin.P2)
+callimatrix.initNeoMatrix(DigitalPin.P0)
 callimatrix.callimatrix_del()
 Pos = 0
 callimatrix.SetMatrixColorbright(0x00ff00, 0, 0, cbrightness.hp25)
